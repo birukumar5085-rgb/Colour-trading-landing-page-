@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telegram VIP Landing</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#000;
+    color:#fff;
+    text-align:center;
+}
+
+.container{
+    max-width:400px;
+    margin:auto;
+    padding:20px;
+}
+
+h1{
+    color:white;
+}
+
+.highlight{
+    color:red;
+}
+
+.button{
+    display:block;
+    margin:15px 0;
+    padding:15px;
+    background:#00ff66;
+    color:black;
+    font-weight:bold;
+    border-radius:30px;
+    text-decoration:none;
+    box-shadow:0 0 10px #00ff66;
+}
+
+.button:hover{
+    background:#00cc55;
+}
+
+.rating{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.list{
+    text-align:left;
+    margin:15px 0;
+}
+
+.list li{
+    margin:8px 0;
+}
+
+.countdown{
+    margin-top:20px;
+    padding:15px;
+    border:2px solid red;
+    display:inline-block;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>INDIA BEST <span class="highlight">TELEGRAM</span> VIP CHANNEL</h1>
+
+<a href="https://t.me/yourlink" class="button">JOIN TELEGRAM CHANNEL</a>
+
+<div class="rating">
+Channel Rating: (4.9/5)
+</div>
+
+<ul class="list">
+<li>👉 JOIN VIP CHANNEL</li>
+<li>👉 JOIN FAST FREE</li>
+<li>👉 DAILY PROFIT SIGNALS</li>
+</ul>
+
+<a href="https://t.me/+POcC6Cm4xls1YzE1" class="button">JOIN VIP CHANNEL</a>
+
+<div class="countdown">
+⏳ Offer Ends In:
+<div id="timer"></div>
+</div>
+
+</div>
+
+<script>
+// 1 Hour Countdown
+var countDownDate = new Date().getTime() + (60 * 60 * 1000);
+
+var x = setInterval(function() {
+
+var now = new Date().getTime();
+var distance = countDownDate - now;
+
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("timer").innerHTML =
+hours + "h " + minutes + "m " + seconds + "s ";
+
+if (distance < 0) {
+clearInterval(x);
+document.getElementById("timer").innerHTML = "EXPIRED";
+}
+
+}, 1000);
+</script>
+
+</body>
+</html>
