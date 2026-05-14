@@ -1,140 +1,304 @@
 <!DOCTYPE html>
-<html>
-<head> <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1249807350631567');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1249807350631567&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Telegram VIP Landing</title>
+<title>TRADE WITH BIRU</title>
 
 <style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
 body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#000;
-    color:#fff;
-    text-align:center;
+  background:radial-gradient(circle at top,#071126,#020617 65%);
+  color:white;
+  overflow-x:hidden;
 }
 
 .container{
-    max-width:400px;
-    margin:auto;
-    padding:20px;
+  width:100%;
+  max-width:430px;
+  margin:auto;
+  padding:20px;
+  text-align:center;
 }
 
-h1{
-    color:white;
+.logo{
+  font-size:42px;
+  font-weight:bold;
+  margin-top:20px;
+  background:linear-gradient(90deg,#00f0ff,#00ff95,#00f0ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:glow 2s infinite alternate;
 }
 
-.highlight{
-    color:red;
+@keyframes glow{
+  from{
+    filter:drop-shadow(0 0 10px #00f0ff);
+  }
+  to{
+    filter:drop-shadow(0 0 25px #00ff95);
+  }
 }
 
-.button{
-    display:block;
-    margin:15px 0;
-    padding:15px;
-    background:#00ff66;
-    color:black;
-    font-weight:bold;
-    border-radius:30px;
-    text-decoration:none;
-    box-shadow:0 0 10px #00ff66;
+.sub{
+  margin-top:10px;
+  color:#d1d5db;
+  font-size:19px;
+  margin-bottom:25px;
 }
 
-.button:hover{
-    background:#00cc55;
+.card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(12px);
+  border-radius:28px;
+  padding:20px;
+  overflow:hidden;
+  box-shadow:0 0 35px rgba(0,255,255,0.15);
 }
 
-.rating{
-    margin:15px 0;
-    font-size:18px;
+.banner{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:22px;
+  margin-bottom:20px;
+  box-shadow:0 0 25px rgba(0,255,255,0.3);
 }
 
-.list{
-    text-align:left;
-    margin:15px 0;
+.live{
+  display:inline-block;
+  background:red;
+  color:white;
+  padding:8px 16px;
+  border-radius:50px;
+  font-weight:bold;
+  margin-bottom:15px;
+  animation:blink 1s infinite;
 }
 
-.list li{
-    margin:8px 0;
+@keyframes blink{
+  50%{
+    opacity:0.5;
+  }
 }
 
-.countdown{
-    margin-top:20px;
-    padding:15px;
-    border:2px solid red;
-    display:inline-block;
-    font-size:18px;
+.main-title{
+  font-size:34px;
+  color:#00f0ff;
+  margin-bottom:15px;
+  font-weight:bold;
 }
+
+.desc{
+  color:#d1d5db;
+  line-height:28px;
+  font-size:17px;
+  margin-bottom:20px;
+}
+
+.join-btn{
+  display:block;
+  width:100%;
+  text-decoration:none;
+  background:linear-gradient(90deg,#00c6ff,#0072ff);
+  padding:18px;
+  border-radius:50px;
+  color:white;
+  font-size:22px;
+  font-weight:bold;
+  margin-top:10px;
+  margin-bottom:25px;
+  box-shadow:0 0 20px rgba(0,114,255,0.5);
+}
+
+.timer-box{
+  margin-top:10px;
+}
+
+.timer-title{
+  font-size:18px;
+  color:#facc15;
+}
+
+.timer{
+  font-size:65px;
+  color:#ff3b3b;
+  font-weight:bold;
+  margin-top:10px;
+  text-shadow:0 0 15px red;
+}
+
+.stats{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:30px;
+}
+
+.stat{
+  flex:1;
+  background:rgba(255,255,255,0.05);
+  padding:18px 10px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.stat h2{
+  color:#00ff95;
+  margin-bottom:5px;
+}
+
+.features{
+  margin-top:28px;
+  text-align:left;
+}
+
+.feature{
+  background:rgba(255,255,255,0.05);
+  margin-bottom:12px;
+  padding:15px;
+  border-radius:16px;
+  border-left:4px solid #00f0ff;
+}
+
+.footer{
+  margin-top:35px;
+  color:#9ca3af;
+  padding-bottom:20px;
+  font-size:15px;
+}
+
 </style>
 </head>
 
 <body>
 
 <div class="container">
-<img src="https://i.ibb.co/1GTDnx3T/Picsart-26-03-05-14-46-55-755.jpg" 
-style="width:100%; max-width:400px; border-radius:12px; margin-bottom:15px;">
-    
-<h1>INDIA BEST <span class="highlight">TELEGRAM</span> VIP CHANNEL</h1>
 
-<a href="https://t.me/+9GVZSjL4kxBhMjY1" class="button">JOIN TELEGRAM CHANNEL</a>
+  <div class="logo">
+    TRADE WITH BIRU
+  </div>
 
-<div class="rating">
-Channel Rating: (4.9/5)
-</div>
+  <div class="sub">
+    No.1 Binary Trading Community 🔥
+  </div>
 
-<ul class="list">
-<li>👉 JOIN VIP CHANNEL</li>
-<li>👉 JOIN FAST FREE</li>
-<li>👉 DAILY PROFIT SIGNALS</li>
-</ul>
+  <div class="card">
 
-<a href="https://t.me/+9GVZSjL4kxBhMjY1" class="button">JOIN VIP CHANNEL</a>
+    <img class="banner"
+    src="https://i.ibb.co/GvF183J3/Screenshot-2026-0514-010637.png">
 
-<div class="countdown">
-⏳ Offer Ends In:
-<div id="timer"></div>
-</div>
+    <div class="live">
+      🔴 LIVE SIGNALS
+    </div>
+
+    <div class="main-title">
+      Recover Your Loss Fast ⚡
+    </div>
+
+    <div class="desc">
+      Get high accuracy binary trading signals, VIP strategy & daily winning updates 📈💸
+    </div>
+
+    <!-- JOIN BUTTON FIXED -->
+    <a href="https://t.me/+Z1slKs6wanZjYzQ1"
+    class="join-btn">
+      🚀 JOIN FREE TELEGRAM
+    </a>
+
+    <div class="timer-box">
+
+      <div class="timer-title">
+        ⏳ Redirecting To Telegram In
+      </div>
+
+      <div class="timer" id="timer">
+        3
+      </div>
+
+    </div>
+
+    <div class="stats">
+
+      <div class="stat">
+        <h2>99%</h2>
+        <p>Accuracy</p>
+      </div>
+
+      <div class="stat">
+        <h2>15K+</h2>
+        <p>Members</p>
+      </div>
+
+      <div class="stat">
+        <h2>24/7</h2>
+        <p>Support</p>
+      </div>
+
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+        ✅ Daily VIP Signals
+      </div>
+
+      <div class="feature">
+        ✅ Binary Trading Strategy
+      </div>
+
+      <div class="feature">
+        ✅ Beginner Friendly Guide
+      </div>
+
+      <div class="feature">
+        ✅ Fast Recovery Methods
+      </div>
+
+      <div class="feature">
+        ✅ Live Winning Updates
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Powered By TRADE WITH BIRU ⚡
+  </div>
 
 </div>
 
 <script>
-// 1 Hour Countdown
-var countDownDate = new Date().getTime() + (60 * 60 * 1000);
 
-var x = setInterval(function() {
+let time = 3;
 
-var now = new Date().getTime();
-var distance = countDownDate - now;
+const timer = document.getElementById("timer");
 
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+const countdown = setInterval(() => {
 
-document.getElementById("timer").innerHTML =
-hours + "h " + minutes + "m " + seconds + "s ";
+  timer.innerHTML = time;
 
-if (distance < 0) {
-clearInterval(x);
-document.getElementById("timer").innerHTML = "EXPIRED";
-}
+  time--;
 
-}, 1000);
+  if(time < 0){
+
+    clearInterval(countdown);
+
+    window.location.href = "https://t.me/+Z1slKs6wanZjYzQ1";
+
+  }
+
+},1000);
+
 </script>
 
 </body>
